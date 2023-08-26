@@ -12,6 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Rising stuff.
 $(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
+TARGET_BOOT_ANIMATION_RES := 1080
 BLAZE_BUILD_TYPE := UNOFFICIAL
 WITH_GAPPS := true
 TARGET_SUPPORTS_BLUR := true
