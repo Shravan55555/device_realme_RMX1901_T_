@@ -23,10 +23,6 @@ TARGET_ENABLE_BLUR := true
 # UDFPS ICONS/ANIMATIONS
 TARGET_HAS_UDFPS := true
 EXTRA_UDFPS_ANIMATIONS := true
-
-
-# Wether to use google (true) or AOSP (false) telephony package bundle. (defaults: false for gms core, true for pixel builds)
-TARGET_USE_GOOGLE_TELEPHONY := false
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
@@ -46,14 +42,10 @@ PRODUCT_MODEL := Realme X
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
-
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="cheetah-user 13 TQ3A.230805.001 10316531 release-keys" \
+    PRIVATE_BUILD_DESC="RMX1901-user 11 RKQ1.201217.002/1619368911282:user/release-keys" \
     PRODUCT_NAME="RMX1901" \
     TARGET_DEVICE="RMX1901"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := google/cheetah/cheetah:13/TQ3A.230805.001/10316531:user/release-keys
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.fingerprint=$(BUILD_FINGERPRINT)
+BUILD_FINGERPRINT := realme/RMX1901/RMX1901:11/RKQ1.201217.002/1619368911282:user/release-keys
